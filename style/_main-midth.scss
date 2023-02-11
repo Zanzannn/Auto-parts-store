@@ -1,0 +1,101 @@
+.main-midth {
+  margin: 0 auto;
+  margin-bottom: 120px;
+  width: 1280px;
+
+  &-box {
+    display: grid;
+    grid-template-columns: 380px 278px 278px 278px;
+    grid-template-rows: 350px 350px;
+    grid-gap: 20px 20px;
+
+    &-item_1 {
+      grid-row-start: 1; 
+      grid-row-end: -1;
+      background-color: #f7f7f7;
+
+      button {
+        width: 358px;
+        height: 76px;
+        cursor: pointer;
+        border: #f7f7f7;
+        background-color: #f7f7f7;
+      }
+
+      button:hover {
+        background-color: #4200FF;
+        border: #4200FF;
+        color: #FFFFFF;
+      }
+
+      button:active {
+        background-color: #4200FF;
+        border-color: #4200FF;
+        color: #eee;
+      }
+
+      &-button {
+        width: 358px;
+        height: 76px;
+        display: flex;
+        padding: 20px 20px 20px 5px;
+        @include fontz (20px, 22px, Arial, 500);
+        align-items: center;
+        background-color: #f7f7f7;
+        cursor: pointer;
+        flex-wrap: nowrap;
+        
+        
+        &-img {
+          width: 78px;
+          display: flex;
+          justify-content: center;
+        }
+
+        &-text {
+          width: 265px;
+          display: flex;
+        }
+
+        &-vector {
+          width: 20px;
+          display: flex;
+          order: 1;
+        }
+      }
+    }
+
+    &-item_2 {
+      background: #FFFFFF;
+      box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 5px; 
+
+      &-bg {
+        width: 278px;
+        height: 229px;
+        background-color: #f7f7f7;
+        padding-top: 25px;
+        text-align: center;
+        border-radius: 5px 5px 0 0;
+      }
+
+      &-text {
+        padding: 20px 36px 24px 20px;
+        @include fontz (17px, 22px, Arial, 500);
+        text-align: left;
+      }
+
+      &-star {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: flex;
+
+        &-end {
+          @include fontz (20px, 23px, Tahoma, 500);
+          color: rgba(66, 0, 255, 1);
+          padding-left: 76px;
+        }
+      }  
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.footer {
+  margin: 0 auto;
+  width: 1440px;
+
+  &-container {
+    background-color: #2F2F2F;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 300px 300px 430px 340px;
+    align-content: stretch;
+    padding-top: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+
+    .font24 {
+      @include fontz (24px, 31px, Arial, 700); 
+      padding-bottom: 20px;
+      padding-top: 10px;
+    }
+    
+    .font20 {
+      @include fontz (20px, 40px, Arial, 700); 
+    } 
+  
+    &-grid {
+      text-align: left; 
+      padding-right: 90px;
+
+      &-logo {
+        display: block;
+        padding-bottom: 10px;
+      }
+
+      &-phone {
+        color: #FFFFFF;
+        display: block;
+        @include fontz (16px, 21px, Arial, 500);
+        padding-bottom: 203px; 
+      }
+
+      &-icon {
+        display: flex;
+        flex-wrap: nowrap;
+        
+        &-ul {
+          display: flex;
+          column-gap: 26px;
+          justify-content: flex-end;
+        } 
+      }
+    }
+  }  
+}   

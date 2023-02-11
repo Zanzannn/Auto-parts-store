@@ -1,0 +1,55 @@
+.header {
+  margin: 0 auto;
+  padding: 20px 80px 20px 80px;
+  width: 1440px;
+  height: 90px;
+  @extend %flex-center;
+  flex-wrap: nowrap;
+  color: $font-color;
+
+  &-logo {
+    height: 47px;
+    padding-right: 93px;
+  }
+
+  &-list {
+    width: 473px;
+    margin-right: 235px;
+    @include fontz (22px, 29px, Arial, 500);
+    gap: 30px;
+
+    &-ul {
+      @extend %flex-center;
+    }
+  } 
+      
+  &-phone {
+    width: 165px;
+    margin-right: 40px;
+    @include fontz (18px, 23px, Arial, 500);           
+  }
+
+  &-icons {
+    width: 184px;
+
+    &-ul {
+      @extend %flex-center;
+      gap: 20px; 
+      
+      &-link {
+        @extend %flex-center;
+        align-content: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px; 
+        background: #F2F3F5;
+        border: 1px solid #F2F3F5;
+        box-sizing: border-box;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+        
+ 

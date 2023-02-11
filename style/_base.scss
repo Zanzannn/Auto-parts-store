@@ -1,0 +1,14 @@
+%flex-center {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: nowrap;
+}
+
+.wrapper {
+  width: 1440px;
+  margin: 0px auto;
+  background: $backround-color-wraper;
+  user-select: all;
+  @extend %flex-center;
+}

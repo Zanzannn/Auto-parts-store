@@ -1,0 +1,50 @@
+.main-detail {
+  margin: 0 auto;
+  width: 1280px;
+  height: 358px;
+  display: flex;
+  border-radius: 5px;
+  background: #F2F3F5;
+
+  &-left {
+    width: 586px;
+    height: 358px;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 80px;
+    
+    &-text {
+      @include fontz (36px, 46px, Arial, 700);
+      padding-bottom: 40px;
+      text-align: left;
+      }
+
+    &-button {
+      @include fontz (28px, 36px, Arial, 400); 
+      padding: 15px 35px 15px 35px;
+      color: #000000; 
+      box-sizing: border-box;
+      border: 1px solid #000000;
+      border-radius: 4px;
+
+      &-img {
+        padding-left: 10px;
+      }
+    } 
+  }
+    
+  &-right {
+    width: 690px;
+    min-height: 358px;
+    border-radius: 5px;
+    background: url(./Img/car-del.png);
+    background-size: 690px 358px;
+    display: block;
+    text-align: center;
+    float: right;
+  }
+}

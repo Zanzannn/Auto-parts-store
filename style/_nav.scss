@@ -1,0 +1,86 @@
+.nav {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 1280px;
+  height: 600px;
+  color: $font-color;
+  background: #F2F3F5;
+  border: 1px solid #F2F3F5;
+  box-sizing: border-box;
+  border-radius: 10px; 
+
+  &-left {
+    width: 54%;
+    height: 600px;
+    display: block;
+    float: left;
+    padding-left: 62px;
+    
+    &-titel {
+      @include fontz (41px, 53px, Arial, 700);
+      padding: 141px 48px 10px 0px;
+      text-align: left;
+    }
+
+    &-text {
+      @include fontz (28px, 36px, Arial, 400);
+      padding-bottom: 20px;
+      text-align: left;
+    }   
+    
+    form {
+      background: #F2F3F5;
+      position: relative;
+      width: 514px;
+      height: 62px;
+    }
+
+    input {
+      width: 514px;
+      height: 62px;
+      display: block;
+      border-radius: 10px;
+      border: solid 2px rgba(0,0,0,0.4);
+      @include fontz (18px, 23px, Arial, 400);
+      padding-left: 15px;
+      box-shadow: 0px 2px 1px 1px rgba(0,0,0,0.5);
+    }
+
+    input:focus {
+      width: 514px;
+    }
+
+    button {
+      position: absolute;
+      top: 2px;
+      right: 1.6px;
+      bottom: 1.6px;
+      width: 75px;
+      height: 58px;
+      cursor: pointer;
+      border: none;
+      background: rgba(66,0,255,0.8);
+      border-radius: 8px;
+    }
+
+  }
+  
+  &-right {
+    width: 46%;
+    height: 600px;
+    display: block;
+    float: right;
+    padding-top: 35px;
+    background: url(./Img/big-car.png);
+    background-position: right;
+    background-size: 650px 363px;
+    background-repeat: no-repeat;  
+
+    &-elips {
+      display: block;
+      padding-top: 400px;
+    }
+  }
+
+
+}
